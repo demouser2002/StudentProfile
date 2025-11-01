@@ -12,7 +12,7 @@ app.set('view engine', 'handlebars');
 app.use('/api/students', require('./routes/api/students'));
 
 app.get('/', (req, res) => {
-    res.render('home', { title: 'Student Information System'});
+    res.render('home', { title: 'Students Information System'});
 })
 
 app.use(express.static('public'));
